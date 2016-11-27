@@ -32,8 +32,8 @@ before_install:
 
 install:
 # Build ZZBGames - Core
-- git clone https://github.com/ZZBGames/core.git
-- mkdir core/build && cd core/build && cmake .. && make && sudo make install
+- git clone https://github.com/ZZBGames/core.git ZZBGames/core
+- cd ZZBGames/core && cmake -DBUILD_DOC=OFF -DBUILD_TESTS=OFF . && make && sudo make install
 
 before_script:
 # Start X Virtual Framebuffer
