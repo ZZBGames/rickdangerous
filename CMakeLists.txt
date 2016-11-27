@@ -28,10 +28,8 @@ set(PROJECT_VERSION_MINOR "0")
 set(PROJECT_VERSION_PATCH "1")
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 
-set(ZZBCore_ROOT "/home/mathbagu/Mathieu/ZZBGames/core/build/install")
-
 find_package(SFML 2 REQUIRED)
-find_package(ZZBCore 1.0 REQUIRED)
+find_package(ZZBCore 0.0 REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -std=c++11")
 if (NOT CMAKE_BUILD_TYPE)
